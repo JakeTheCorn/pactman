@@ -4,6 +4,8 @@ services:
   pactman-dev:
     build:
       context: lib
+      args:
+        - MY_VAR=1
     container_name: pactman-dev
     stdin_open: true
     tty: true

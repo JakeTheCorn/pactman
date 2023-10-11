@@ -16,7 +16,3 @@ RUN pip-compile -o /code/requirements-manifests/requirements.dev.txt /code/requi
 RUN ls requirements-manifests
 
 RUN pip install --requirement=requirements-manifests/requirements.dev.txt
-
-# COPY lib/requirements.in /code/requirements.in
-# COPY lib/requirements.prod.txt /code/requirements.prod.txt
-# COPY Makefile /code/Makefile
