@@ -2,6 +2,8 @@ FROM python:3.11.3-slim-buster as dev-base
 
 ENV HISTFILE=/root/.history/.bash_history
 
+ARG MY_VAR
+
 RUN mkdir -p /root/.history
 RUN touch /root/.history/.bash_history
 
