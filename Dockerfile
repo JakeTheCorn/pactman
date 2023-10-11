@@ -11,7 +11,7 @@ RUN python -m pip install pip-tools
 
 WORKDIR /code
 
-COPY requirements-manifests /code/requirements-manifests
+COPY lib/requirements-manifests /code/requirements-manifests
 
 RUN pip-compile -o /code/requirements-manifests/requirements.dev.txt /code/requirements-manifests/requirements.dev.in
 
